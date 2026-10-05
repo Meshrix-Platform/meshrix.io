@@ -63,8 +63,8 @@ The profile records the public reference domains used by the site and its badges
 Policy changes belong in that central profile; this repository does not maintain a
 second auditor configuration.
 
-The workflow audits this repository's immutable commit range for pull requests and
-pushes. A manual run audits its history. It preserves the required
+The workflow audits this repository's immutable commit range when an event provides
+a base, or the candidate snapshot for an initial push. A manual run audits its history. It preserves the required
 `meshrix-audit-gate` check and uploads redacted JSON and HTML reports for 30 days.
 Keyword matches are advisory signals for contextual review by the contributor's
 local Agent; CI does not run a paid Agent or audit other repositories.
