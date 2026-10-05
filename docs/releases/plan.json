@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/LicoLand/.github/main/schemas/release-plan.schema.json",
   "schemaVersion": 2,
-  "repository": "LicoLand/meshrix.io",
+  "repository": "Meshrix-Platform/meshrix.io",
   "profile": "continuous-site",
   "currentVersion": null,
   "versionSources": [],
