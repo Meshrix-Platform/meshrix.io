@@ -1,6 +1,6 @@
 # meshrix.io
 
-Updated: 2026-10-05
+Updated: 2026-10-06
 
 Official website for the Meshrix platform: [Meshrix.js](https://github.com/Meshrix-Platform/Meshrix.js), the open-source platform for governed agent tooling, and [Pactium](https://github.com/Meshrix-Platform/Pactium), its proof-first protocol substrate. Both are published on npm; see each repository for its source license.
 
@@ -11,8 +11,8 @@ meshrix.io/
 ├── index.html                         # Single-page portal (platform + substrate)
 ├── styles.css                         # Dark terminal design system
 ├── CNAME                              # GitHub Pages custom domain
-├── .lico-auditor/
-│   └── policy.json                    # Audit policy: declared public reference domains
+├── .github/workflows/
+│   └── general-auditor.yml             # Repository-scoped advisory audit
 ├── assets/
 │   ├── favicon.svg                    # Meshrix.js gateway mark (from apps/console)
 │   ├── fonts/                         # Self-hosted variable fonts (SIL OFL)
@@ -53,3 +53,18 @@ For takeover protection, verify `meshrix.io` in the Meshrix-Platform organizatio
 
 This site is continuously delivered and does not own a product version. Its
 [release profile](docs/releases/README.md) records that boundary.
+
+## Audit policy
+
+[General-Auditor](https://github.com/Unka-Malloc/General-Auditor) owns the common
+rules and this website's
+[repository profile](https://github.com/Unka-Malloc/General-Auditor/blob/only/profiles/Meshrix-Platform/meshrix.io.json).
+The profile records the public reference domains used by the site and its badges.
+Policy changes belong in that central profile; this repository does not maintain a
+second auditor configuration.
+
+The workflow audits this repository's immutable commit range for pull requests and
+pushes. A manual run audits its history. It preserves the required
+`meshrix-audit-gate` check and uploads redacted JSON and HTML reports for 30 days.
+Keyword matches are advisory signals for contextual review by the contributor's
+local Agent; CI does not run a paid Agent or audit other repositories.
