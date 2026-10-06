@@ -65,6 +65,8 @@ second auditor configuration.
 
 The workflow audits this repository's immutable commit range when an event provides
 a base, or the candidate snapshot for an initial push. A manual run audits its history. It preserves the required
-`meshrix-audit-gate` check and uploads redacted JSON and HTML reports for 30 days.
+`meshrix-audit-gate` check without generating or uploading reports. Local reports
+contain exact source matches and stay in the Git-ignored `.general-auditor/local/`
+directory; they must not be uploaded to CI or public storage.
 Keyword matches are advisory signals for contextual review by the contributor's
 local Agent; CI does not run a paid Agent or audit other repositories.
