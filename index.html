@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Meshrix.js is an open-source platform for connecting agents to HTTP and MCP services. Pactium, its proof layer, seals every operation into an append-only, cryptographically verifiable ledger. Both on npm, both on your infrastructure."
+      content="Meshrix.js connects AI agents to HTTP and MCP services behind one governed gateway. Pactium seals every operation into an append-only, cryptographically verifiable ledger. Open source on npm, self-hosted on your infrastructure."
     />
     <meta name="theme-color" content="#0d1117" />
     <meta property="og:type" content="website" />
@@ -14,7 +14,7 @@
     <meta property="og:title" content="Meshrix — The agent tool platform that can prove what it did" />
     <meta
       property="og:description"
-      content="An open-source platform for governed agent tooling, built on a proof layer that seals every operation into a verifiable ledger. meshrix.js and pactium, available on npm."
+      content="Governed HTTP and MCP tooling for AI agents, backed by a cryptographic proof ledger. Install meshrix.js and pactium from npm."
     />
     <title>Meshrix — The agent tool platform that can prove what it did</title>
     <link rel="canonical" href="https://meshrix.io/" />
@@ -57,12 +57,12 @@
       <section class="hero" id="top" aria-labelledby="hero-title">
         <span class="hero-side" aria-hidden="true">meshrix platform — mcp · http · proof — est. 2026</span>
         <div class="hero-copy">
-          <p class="eyebrow">// open source — now on npm</p>
+          <p class="eyebrow">// open source · apache-2.0 · npm</p>
           <h1 id="hero-title">The agent tool platform that can <span class="hl">prove what it did</span>.</h1>
           <p class="lede">
-            <strong>Meshrix.js</strong> connects your agents to HTTP and MCP services behind one governed
-            gateway. <strong class="gold">Pactium</strong>, the proof layer beneath it, seals every operation
-            into an append-only, cryptographically verifiable ledger. Run both on your own infrastructure.
+            <strong>Meshrix.js</strong> puts your HTTP and MCP services behind one governed gateway
+            for AI agents. <strong class="gold">Pactium</strong> seals every operation into an
+            append-only, cryptographically verifiable ledger. Self-hosted on your own infrastructure.
           </p>
           <div class="hero-actions">
             <button class="copy-chip" type="button" data-copy="npm install --global meshrix.js">
@@ -100,7 +100,7 @@
       <div class="marquee" aria-hidden="true">
         <div class="marquee-track">
           <span>npm install --global meshrix.js</span><i>✦</i>
-          <span>pactium v0.8.3 — apache-2.0</span><i>✦</i>
+          <span>pactium v0.8.4 — apache-2.0</span><i>✦</i>
           <span>append-only ledger</span><i>✦</i>
           <span>prolly tree proofs</span><i>✦</i>
           <span>scoped api keys</span><i>✦</i>
@@ -108,7 +108,7 @@
           <span>mcp · http</span><i>✦</i>
           <span>sealed ✓ 7f3a…c9e2</span><i>✦</i>
           <span>npm install --global meshrix.js</span><i>✦</i>
-          <span>pactium v0.8.3 — apache-2.0</span><i>✦</i>
+          <span>pactium v0.8.4 — apache-2.0</span><i>✦</i>
           <span>append-only ledger</span><i>✦</i>
           <span>prolly tree proofs</span><i>✦</i>
           <span>scoped api keys</span><i>✦</i>
@@ -123,10 +123,9 @@
           <p class="eyebrow">// the console</p>
           <h2 id="console-title">Govern by group. Approve by exception.</h2>
           <p>
-            Agents call tools constantly — nobody reviews each request by hand. You define toolsets
-            and scoped keys once; routine traffic flows inside those boundaries, and only an
-            exceptional high-risk call pauses for a human. Everything below is the real Web
-            Console, captured live — not a mockup.
+            Agents invoke tools at machine speed, not human review speed. Define toolsets and
+            scoped keys once so routine traffic flows within policy and calls that require approval
+            pause for human sign-off. The screenshots below show the Meshrix.js Web Console.
           </p>
         </div>
 
@@ -170,9 +169,9 @@
           <p class="eyebrow">// the stack</p>
           <h2 id="stack-title">Two layers. One contract of trust.</h2>
           <p>
-            The platform you operate, and the substrate that proves it — published as two independent
-            npm packages. Meshrix.js consumes Pactium through its public package API; each layer also
-            stands on its own.
+            One layer operates and governs your agent tools; the layer beneath proves what
+            happened. Shipped as two independent npm packages—run them together or adopt Pactium
+            standalone.
           </p>
         </div>
 
@@ -183,8 +182,8 @@
               <span class="layer-license">Apache-2.0</span>
             </div>
             <p>
-              Connect HTTP and MCP services, govern which clients may discover and call each tool,
-              and operate everything from the Web Console. Requires Node.js 22.19+ or 24.3+.
+              Expose HTTP and MCP services through one governed endpoint, scope discovery and
+              execution per client, and inspect every call from the Web Console. Node.js 22.19+ or 24.3+.
             </p>
             <p class="layer-chips">
               <code>meshrix.js</code> <code>@meshrix/kernel</code>
@@ -204,9 +203,8 @@
               <span class="layer-license">Apache-2.0</span>
             </div>
             <p>
-              Proof-first protocol substrate: an append-only operation ledger, Prolly Tree indexes,
-              and portable proof envelopes for verifiable state. Host-neutral and independently
-              usable — it contains no Meshrix-specific aspect.
+              Standalone cryptographic proof substrate: an append-only operation ledger, Prolly Tree
+              state indexes, and portable proof bundles that any verifier can check offline.
             </p>
             <p class="layer-chips">
               <code>pactium</code>
@@ -221,15 +219,15 @@
           <p class="eyebrow">// platform</p>
           <h2 id="platform-title">Your services, governed for agents.</h2>
           <p>
-            Publish existing services through one MCP endpoint. Scoped keys decide what each client
-            can see and do; the Console shows everything that happens next.
+            Publish internal APIs and MCP servers behind one endpoint. Scoped keys control what
+            each client can see and invoke; the Console surfaces every call, approval, and trace.
           </p>
         </div>
 
         <div class="bento">
           <div class="cell cell-console reveal">
             <p class="cell-label"><span class="idx">01</span>Web Console</p>
-            <p class="cell-text">Service health, keys, calls, and logs — day-to-day operation in one surface.</p>
+            <p class="cell-text">Service health, scoped keys, live calls, and logs—operated from one interface.</p>
             <div class="console-mock" aria-hidden="true">
               <div class="cm-bar">
                 <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
@@ -251,7 +249,7 @@
 
           <div class="cell cell-key reveal" style="--rd:.08s">
             <p class="cell-label"><span class="idx">02</span>Scoped API keys</p>
-            <p class="cell-text">Each client sees only what its key allows. Upstream credentials stay on the server.</p>
+            <p class="cell-text">Clients see only the tools their key grants. Upstream credentials stay on the server.</p>
             <div class="key-visual" aria-hidden="true">
               <code class="key-string">mxk_7f3a…c9e2</code>
               <span class="scope allow">tools:read</span>
@@ -262,7 +260,7 @@
 
           <div class="cell cell-approval reveal" style="--rd:.16s">
             <p class="cell-label"><span class="idx">03</span>Approvals</p>
-            <p class="cell-text">Sensitive calls wait for a human decision.</p>
+            <p class="cell-text">Calls that require approval pause for a human decision.</p>
             <div class="approval-visual" aria-hidden="true">
               <p class="ap-line">agent-07 → deploy.prod</p>
               <p class="ap-note">⏸ requires approval</p>
@@ -272,7 +270,7 @@
 
           <div class="cell cell-gateway reveal" style="--rd:.24s">
             <p class="cell-label"><span class="idx">04</span>Upstream gateway</p>
-            <p class="cell-text">HTTP and MCP services behind one endpoint.</p>
+            <p class="cell-text">Aggregate HTTP APIs and MCP servers behind one endpoint.</p>
             <div class="gw-visual" aria-hidden="true">
               <span class="gw-src">HTTP</span><span class="gw-src">MCP</span><span class="gw-src">HTTP</span>
               <span class="gw-arrow">→</span>
@@ -282,13 +280,13 @@
 
           <div class="cell cell-embed reveal" style="--rd:.32s">
             <p class="cell-label"><span class="idx">05</span>Embeddable gateway</p>
-            <p class="cell-text">The typed Gateway API inside your own Node app, independent of the platform runtime.</p>
+            <p class="cell-text">Embed the typed Gateway API inside your Node.js app via @meshrix/kernel.</p>
             <code class="embed-line">npm i @meshrix/kernel</code>
           </div>
 
           <div class="cell cell-private reveal" style="--rd:.4s">
             <p class="cell-label"><span class="idx">06</span>Private deployment</p>
-            <p class="cell-text">Runs where you already operate. Local state stays in the data directory you choose.</p>
+            <p class="cell-text">Deploy on your own servers or containers and choose where Meshrix stores its local state.</p>
             <code class="embed-line">meshrix-server --data-dir ~/.meshrix</code>
           </div>
         </div>
@@ -299,8 +297,8 @@
           <p class="eyebrow">// substrate</p>
           <h2 id="substrate-title">Proof, not logs.</h2>
           <p>
-            Pactium records immutable operation facts and mints proof envelopes you can verify locally,
-            export, and re-verify anywhere — without trusting the host that produced them.
+            Pactium records immutable operation facts and mints portable proof bundles anyone can
+            verify locally or offline—with no need to trust the origin server.
           </p>
         </div>
 
@@ -349,15 +347,15 @@ const proof = await verifyProofBundle(bundle, {
           <div class="proof-points">
             <div class="point">
               <h3>Append-only ledger</h3>
-              <p>RFC 6962-style operation ledger with Intent, Outcome, and terminal Receipt facts. History cannot be rewritten, only extended.</p>
+              <p>RFC 6962-style transparency log recording Intent, Outcome, and terminal Receipt facts. Verification checks that new entries extend the committed history.</p>
             </div>
             <div class="point">
               <h3>Prolly Tree indexes</h3>
-              <p>Canonical indexes with membership, non-membership, range, multiproof, and diff support over committed state.</p>
+              <p>Canonical Merkle indexes supporting membership, non-membership, range proofs, multiproofs, and structural diffs over committed state.</p>
             </div>
             <div class="point">
               <h3>Portable bundles</h3>
-              <p>Content-addressed proof material travels in a bundle with a self-carried manifest — verification needs no access to the origin server.</p>
+              <p>Content-addressed proof blocks and a self-carried manifest travel together so third parties can verify offline.</p>
             </div>
             <div class="point point-install">
               <button class="copy-chip chip-gold" type="button" data-copy="npm install pactium">
@@ -376,8 +374,8 @@ const proof = await verifyProofBundle(bundle, {
       <section class="section" id="start" aria-labelledby="start-title">
         <div class="section-intro intro-right reveal" data-num="05">
           <p class="eyebrow">// get started</p>
-          <h2 id="start-title">From npm to a running system in minutes.</h2>
-          <p>Start at the layer you need. The platform gives you the operating surface; the substrate gives you verifiable evidence.</p>
+          <h2 id="start-title">Up and running in minutes.</h2>
+          <p>Adopt the full platform for agent operations, or install Pactium standalone to add cryptographic proofs to your own stack.</p>
         </div>
 
         <div class="start-grid">
@@ -390,11 +388,11 @@ const proof = await verifyProofBundle(bundle, {
               </li>
               <li>
                 <code>meshrix-server --with-ui --data-dir ./meshrix-data</code>
-                <p>Starts the server and the Web Console together.</p>
+                <p>Starts the gateway server and Web Console on one origin.</p>
               </li>
               <li>
                 Open <code>http://127.0.0.1:7228</code>
-                <p>Connect a service, publish its tools, and issue a scoped key for your client.</p>
+                <p>Connect an upstream service, publish its tools, and issue a scoped key for your agent.</p>
               </li>
             </ol>
             <p class="start-links">
@@ -409,15 +407,15 @@ const proof = await verifyProofBundle(bundle, {
             <ol class="start-steps">
               <li>
                 <code>npm install pactium</code>
-                <p>ESM only, Node.js 22.19+ or 24.3+. No platform required.</p>
+                <p>Pure ESM package for Node.js 22.19+ or 24.3+.</p>
               </li>
               <li>
                 <code>pactium.recordOperation(...)</code>
-                <p>Record facts and receive a verifiable proof envelope.</p>
+                <p>Append operation facts and receive a verifiable proof envelope.</p>
               </li>
               <li>
                 <code>verifyProofBundle(bundle)</code>
-                <p>Export portable bundles and verify them anywhere, against a trust policy you choose.</p>
+                <p>Export self-contained bundles and verify them offline under your trust policy.</p>
               </li>
             </ol>
             <p class="start-links">
@@ -432,18 +430,18 @@ const proof = await verifyProofBundle(bundle, {
       <section class="section section-open" id="open" aria-labelledby="open-title">
         <div class="section-intro reveal" data-num="06">
           <p class="eyebrow">// open source</p>
-          <h2 id="open-title">0.x — and honest about it.</h2>
+          <h2 id="open-title">Built in public. Apache-2.0.</h2>
           <p>
-            Both packages are early and iterating in public. APIs can still evolve; the status and
-            compatibility documents are the contract, not the marketing. A project about verifiable
-            proof should not ask for unverifiable trust.
+            Both packages are actively evolving in 0.x releases. Inspect the source, read the
+            protocol specs, and track current capabilities and compatibility directly in the
+            repositories.
           </p>
         </div>
 
         <div class="repo-grid">
           <a class="repo-card reveal" href="https://github.com/Meshrix-Platform/Meshrix.js">
             <span class="repo-name">Meshrix-Platform / Meshrix.js</span>
-            <span class="repo-desc">Governed gateway, Web Console, and plugins for agent-facing services.</span>
+            <span class="repo-desc">Governed HTTP and MCP gateway, Web Console, and plugin runtime for AI agents.</span>
             <span class="repo-meta">
               <img src="https://img.shields.io/github/license/Meshrix-Platform/Meshrix.js?style=flat-square&amp;labelColor=0d1117&amp;color=58a6f0" alt="License of Meshrix.js" />
               <img src="https://img.shields.io/npm/v/meshrix.js?style=flat-square&amp;color=58a6f0&amp;labelColor=0d1117&amp;label=npm" alt="npm version of meshrix.js" />
@@ -451,7 +449,7 @@ const proof = await verifyProofBundle(bundle, {
           </a>
           <a class="repo-card repo-gold reveal" style="--rd:.12s" href="https://github.com/Meshrix-Platform/Pactium">
             <span class="repo-name">Meshrix-Platform / Pactium</span>
-            <span class="repo-desc">Proof-first substrate for verifiable operation facts and recovery history.</span>
+            <span class="repo-desc">Cryptographic proof ledger, Prolly Tree indexes, and portable verification bundles.</span>
             <span class="repo-meta">
               <img src="https://img.shields.io/github/license/Meshrix-Platform/Pactium?style=flat-square&amp;labelColor=0d1117&amp;color=d29922" alt="License of Pactium" />
               <img src="https://img.shields.io/npm/v/pactium?style=flat-square&amp;color=d29922&amp;labelColor=0d1117&amp;label=npm" alt="npm version of pactium" />
@@ -484,7 +482,7 @@ const proof = await verifyProofBundle(bundle, {
         </svg>
         meshrix<span class="brand-tld">.io</span>
       </p>
-      <p class="footer-line">Open software for agents — and the proof of what they did.</p>
+      <p class="footer-line">Open-source infrastructure for AI agents — and cryptographic proof of what they did.</p>
       <div class="footer-links">
         <a href="https://github.com/Meshrix-Platform">GitHub</a>
         <a href="https://github.com/Meshrix-Platform/Meshrix.js">Meshrix.js</a>
