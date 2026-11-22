@@ -38,17 +38,17 @@
   --bg-raise: #161b22;
   --bg-term: #0a0e14;
   --ink: #e9edf2;
-  --ink-soft: var(--ink-soft);
+  --ink-soft: #c9d1d9;
   --muted: #98a2ae;
-  --faint: #5f6a76;
+  --faint: #8b949e;
   --line: color-mix(in srgb, var(--ink) 10%, transparent);
   --acc: #58a6f0;
   --acc-dim: color-mix(in srgb, var(--acc) 14%, transparent);
-  --on-acc: var(--on-acc);
+  --on-acc: #0d1117;
   --gold: #d29922;
   --gold-dim: color-mix(in srgb, var(--gold) 12%, transparent);
-  --tok-string: var(--tok-string);
-  --term-dot: var(--term-dot);
+  --tok-string: #a5d6ff;
+  --term-dot: #3f4753;
   --page-x: clamp(1.25rem, 4vw, 4rem);
   --max: 1160px;
   --font-display: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
@@ -140,6 +140,10 @@ code {
 
 .skip-link:focus {
   transform: translateY(0);
+}
+
+.skip-link:hover {
+  color: var(--on-acc);
 }
 
 /* ---------- header ---------- */
@@ -1372,13 +1376,13 @@ code {
   transform: translateY(-50%) rotate(180deg);
   writing-mode: vertical-rl;
   margin: 0;
-  color: var(--faint);
+  color: var(--muted);
   font-family: var(--font-mono);
   font-size: 0.72rem;
   letter-spacing: 0.24em;
   text-transform: uppercase;
   white-space: nowrap;
-  opacity: 0.55;
+  opacity: 0.8;
   pointer-events: none;
 }
 
